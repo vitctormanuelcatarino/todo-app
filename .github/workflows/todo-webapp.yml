@@ -40,7 +40,7 @@ jobs:
     - name: Publish
       if: github.event_name != 'pull_request'
       run: |
-        dotnet publish --no-build src/TodoWebapp/TodoWebapp.csproj -o src/TodoWebapp/publish
+        dotnet publish --no-build src/TodoWebapp/TodoWebapp.csproj  -o src/TodoWebapp/publish
 
     - uses: actions/upload-artifact@v3
       if: github.event_name != 'pull_request'
