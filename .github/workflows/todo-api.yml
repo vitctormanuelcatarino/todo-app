@@ -47,7 +47,7 @@ jobs:
 
     - name: Test
       shell: bash
-      run: dotnet test --no-build src/TodoAPI.Tests/TodoAPI.Tests.csproj--verbosity normal --logger "trx;LogFileName=test-results.trx"
+      run: dotnet test --no-build src/TodoAPI.Tests/TodoAPI.Tests.csproj --verbosity normal --logger "trx;LogFileName=test-results.trx"
       
     - name: Test Report
       uses: dorny/test-reporter@v1
