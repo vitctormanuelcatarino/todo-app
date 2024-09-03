@@ -87,12 +87,12 @@ jobs:
       ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
 
     steps:
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: ${{ env.ARTIFACT_NAME }}
         path: ./todo-api
 
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: ${{ env.ARTIFACT_NAME }}-iac
         path: ./terraform
@@ -165,12 +165,12 @@ jobs:
       ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
 
     steps:
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: ${{ env.ARTIFACT_NAME }}
         path: ./todo-api
 
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: ${{ env.ARTIFACT_NAME }}-iac
         path: ./terraform
